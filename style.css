@@ -1,0 +1,118 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.main {
+  position: absolute;
+  height: 67%;
+  width: 28%;
+  top: 50%;
+  left: 50%;
+  padding: 0.5rem;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.main #res {
+  width: 92%;
+  height: 5.5rem;
+  border: none;
+  font-size: 2rem;
+  outline: none;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-top: 1rem;
+  text-align: right;
+}
+
+.main .btn {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.main .btn > input {
+  padding: 10px 0;
+  font-size: 30px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+#red {
+  background-color: red;
+}
+
+#orange {
+  background-color: orange;
+}
+
+#grey {
+  background-color: grey;
+}
+
+/*======================= media queries (mobile devices) ======================*/
+
+@media only screen and (max-width: 320px) {
+  .main {
+    width: 100%;
+    height: 90%;
+    border-radius: 20px;
+  }
+
+  .main #res {
+    width: 94%;
+    height: 30%;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 3rem;
+  }
+
+  .main .btn {
+    width: 95%;
+    margin-left: 10px;
+  }
+
+  .main .btn > input {
+    height: 100%;
+    padding: 20px;
+    font-size: 2rem;
+  }
+}
+
+/*======================= media queries (tablet devices) ======================*/
+
+@media only screen and (max-width: 1024px) {
+  .main {
+    width: 94%;
+    height: 95%;
+    border-radius: 20px;
+  }
+
+  .main #res {
+    width: 94%;
+    height: 30%;
+    margin-left: 24px;
+    margin-top: 48px;
+    margin-bottom: 30px;
+    font-size: 6rem;
+  }
+
+  .main .btn {
+    width: 93%;
+    margin-left: 22px;
+  }
+
+  .main .btn > input {
+    height: 100%;
+    padding: 35px;
+    font-size: 2.5rem;
+  }
+}
